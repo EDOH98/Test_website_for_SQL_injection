@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Idea Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="login-section">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <div id="loginMessage"></div>
+    </div>
+
+    <div id="idea-exchange" style="display: none;">
+        <h2>Welcome to the Hacker Idea Exchange!</h2>
+        <div id="discussion-area">
+            <h3>Discussion Board</h3>
+            <textarea id="ideaInput" placeholder="Share your idea..."></textarea>
+            <button id="submitIdea">Submit Idea</button>
+            <ul id="ideasList"></ul>
+        </div>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
